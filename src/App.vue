@@ -1,10 +1,16 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Events</router-link> |
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
 </template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -26,5 +32,9 @@
       color: #42b983;
     }
   }
+}
+
+h4 {
+  font-size: 20px;
 }
 </style>
